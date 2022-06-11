@@ -8,6 +8,7 @@ module.exports = {
     lang: 'zh-CN',
     title: 'Sam\'s 私人食谱',
     port: '8086',
+    base :"/cookbook/",
 
     plugins: [
         backToTopPlugin(),
