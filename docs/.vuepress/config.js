@@ -32,6 +32,11 @@ function navbarFun() {
   return [
     { text: '首页', link: '/' },
     {
+      text: '肉类', children: [
+        { text: '猪肉', link: '/meat/pork/' },
+      ]
+    },
+    {
       text: '米面干腌', children: [
         {
           text: '米面类', children: [
@@ -47,15 +52,22 @@ function navbarFun() {
 function sidebarFun() {
   return {
     '/principals/rices/': [{
-      text: '米类', collapsible: true,
+      text: '米类',
       children: [
         '/principals/rices/rice.md',
       ],
     }],
     '/principals/wheaten/': [{
-      text: '面类', collapsible: true,
+      text: '面类',
       children: [
         '/principals/wheaten/wheaten.md',
+      ],
+    }],
+    '/meat/pork/': [{
+      text: '猪肉',
+      children: [
+        '/meat/pork/pork.md',
+        '/meat/pork/ribs.md',
       ],
     }],
   };
