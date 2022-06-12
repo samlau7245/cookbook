@@ -5,42 +5,61 @@ const { nprogressPlugin } = require('@vuepress/plugin-nprogress')
 // const { docsearchPlugin } = require('@vuepress/plugin-docsearch')
 
 module.exports = {
-    lang: 'zh-CN',
-    title: 'Sam\'s 私人食谱',
-    port: '8086',
-    base :"/cookbook/",
+  lang: 'zh-CN',
+  title: 'Sam\'s 私人食谱',
+  port: '8086',
+  base: "/cookbook/",
 
-    plugins: [
-        backToTopPlugin(),
-        mediumZoomPlugin(),
-        nprogressPlugin(),
-        // docsearchPlugin(),
-    ],
+  plugins: [
+    backToTopPlugin(),
+    mediumZoomPlugin(),
+    nprogressPlugin(),
+    // docsearchPlugin(),
+  ],
 
-    markdown: {
-        lineNumbers: true,
-    },
+  markdown: {
+    lineNumbers: true,
+  },
 
-    theme: defaultTheme({
-        logo: '/favicon.png',
-        navbar: [
-            { text: '首页',link: '/'},
-            { text: '首页1',link: '/group/'},
-        ],
-
-        sidebar: {
-            '/group/':[{
-                text: 'Guide',
-                collapsible: true,
-                children: [
-                    '/group/aaa.md',
-                    '/group/bbb.md',
-                ],
-            }],
-        },
-    }),
+  theme: defaultTheme({
+    logo: '/favicon.png',
+    navbar: navbarFun(),
+    sidebar: sidebarFun(),
+  }),
 }
 
+function navbarFun() {
+  return [
+    { text: '首页', link: '/' },
+    {
+      text: '米面干腌', children: [
+        {
+          text: '米面类', children: [
+            { text: '米类', link: '/principals/rices/' },
+            { text: '面类', link: '/principals/wheaten/' },
+          ]
+        }
+      ]
+    },
+  ];
+}
+
+function sidebarFun() {
+  return {
+    '/principals/rices/': [{
+      text: '米类', collapsible: true,
+      children: [
+        '/principals/rices/rice.md',
+      ],
+    }],
+    '/principals/wheaten/': [{
+      text: '面类', collapsible: true,
+      children: [
+        '/principals/wheaten/wheaten.md',
+      ],
+    }],
+  };
+}
 
 /*
 module.exports = {
