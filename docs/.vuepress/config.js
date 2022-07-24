@@ -2,19 +2,18 @@ const { defaultTheme } = require('vuepress')
 const { backToTopPlugin } = require('@vuepress/plugin-back-to-top')
 const { mediumZoomPlugin } = require('@vuepress/plugin-medium-zoom')
 const { nprogressPlugin } = require('@vuepress/plugin-nprogress')
-// const { docsearchPlugin } = require('@vuepress/plugin-docsearch')
 
 module.exports = {
   lang: 'zh-CN',
   title: 'Sam\'s 私人食谱',
   port: '8086',
   base: "/cookbook/",
+  description: "私人厨房！",
 
   plugins: [
     backToTopPlugin(),
     mediumZoomPlugin(),
     nprogressPlugin(),
-    // docsearchPlugin(),
   ],
 
   markdown: {
@@ -28,12 +27,14 @@ module.exports = {
   }),
 }
 
+/* 顶部导航栏 */
 function navbarFun() {
   return [
     { text: '首页', link: '/' },
     {
       text: '肉类', children: [
         { text: '猪肉', link: '/meat/pork/' },
+        { text: '牛肉', link: '/meat/beef/' },
       ]
     },
     {
@@ -46,9 +47,11 @@ function navbarFun() {
         }
       ]
     },
+    { text: '铁板烧', link: '/teppanyaki/' },
   ];
 }
 
+/* 侧边菜单栏 */
 function sidebarFun() {
   return {
     '/principals/rices/': [{
@@ -68,6 +71,12 @@ function sidebarFun() {
       children: [
         '/meat/pork/pork.md',
         '/meat/pork/ribs.md',
+      ],
+    }],
+    '/meat/beef/': [{
+      text: '牛肉',
+      children: [
+        '/meat/beef/beef.md',
       ],
     }],
   };
