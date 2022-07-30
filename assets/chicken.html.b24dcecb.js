@@ -1,0 +1,1 @@
+const e={key:"v-2b05dd6e",path:"/meat/chicken/chicken.html",title:"\u9E21\u8089",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u53EF\u4E50\u9E21\u7FC5",slug:"\u53EF\u4E50\u9E21\u7FC5",children:[]},{level:2,title:"\u84B8\u86CB",slug:"\u84B8\u86CB",children:[]}],git:{updatedTime:null,contributors:[]},filePathRelative:"meat/chicken/chicken.md"};export{e as data};

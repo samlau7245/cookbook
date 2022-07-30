@@ -1,0 +1,1 @@
+const e={key:"v-efcebce0",path:"/principals/wheaten/",title:"\u9762\u7C7B",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1655002132e3,contributors:[{name:"\u5218\u5C71",email:"",commits:1}]},filePathRelative:"principals/wheaten/README.md"};export{e as data};

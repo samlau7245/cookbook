@@ -1,0 +1,1 @@
+const e={key:"v-066f5600",path:"/meat/beef/",title:"\u725B\u8089",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u571F\u8C46\u80A5\u725B",slug:"\u571F\u8C46\u80A5\u725B",children:[]}],git:{updatedTime:1658626594e3,contributors:[{name:"\u5218\u5C71",email:"",commits:1}]},filePathRelative:"meat/beef/README.md"};export{e as data};

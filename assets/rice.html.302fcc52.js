@@ -1,0 +1,1 @@
+const e={key:"v-0624978c",path:"/principals/rices/rice.html",title:"\u97E9\u5F0F\u6CE1\u83DC\u7092\u996D",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1658626594e3,contributors:[{name:"\u5218\u5C71",email:"",commits:2}]},filePathRelative:"principals/rices/rice.md"};export{e as data};

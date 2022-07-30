@@ -1,0 +1,1 @@
+const t={key:"v-298ad492",path:"/teppanyaki/",title:"\u94C1\u677F\u70E7",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1658626594e3,contributors:[{name:"\u5218\u5C71",email:"",commits:1}]},filePathRelative:"teppanyaki/README.md"};export{t as data};

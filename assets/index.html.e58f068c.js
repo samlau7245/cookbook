@@ -1,0 +1,1 @@
+const t={key:"v-42d1769b",path:"/fruit_vigetables/fruits/",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"fruit_vigetables/fruits/README.md"};export{t as data};

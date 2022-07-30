@@ -1,0 +1,1 @@
+const e={key:"v-d7252396",path:"/meat/beef/beef.html",title:"\u5364\u725B\u8089",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1658626594e3,contributors:[{name:"\u5218\u5C71",email:"",commits:1}]},filePathRelative:"meat/beef/beef.md"};export{e as data};
